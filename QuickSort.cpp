@@ -22,7 +22,7 @@ void input(){
 
     for (int i = 0; i < n; i++)
     {
-        cout << "<" << (i + i) << " > ";
+        cout << "<" << (i + 1) << " > ";
 		cin >> arr[i];
     }
 }
@@ -85,7 +85,27 @@ void display() {
 		cout << arr[i] << " ";
 	}
 
-	cout << "\n\n Angka yang di Bandingkan: " << cmp_count << endl;
-	cout << "Angka dari Data yang Telah di Ubah: " << mov_count << endl;
+	cout << "\n\n Number Of camparasion: " << cmp_count << endl;
+	cout << "Number of data movement: " << mov_count << endl;
 }
 
+int main()
+{
+	char ch;
+
+	do{
+		input();
+		q_short(0, n -1);
+		display();
+		cout << "\n\n Apakah Kamu Mau Melanjutkan? (y/n):" ;
+		cin >> ch;
+		if (ch == 'n' || ch == 'N')
+			break;
+		
+		system("pause");
+		system("CLS");
+
+	}while (true);
+	return 0;
+		
+	}
