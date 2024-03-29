@@ -56,3 +56,9 @@ while (i <= j)
 		cmp_count++;
 	}
 	cmp_count++;
+	while ((arr[j] > pivot ) && (i >= low))
+	{
+		j--;
+		cmp_count++;
+	}
+	cmp_count++;
