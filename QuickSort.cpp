@@ -75,3 +75,17 @@ q_short(low, j - 1);
 q_short(j + 1, high);
 
 }
+
+void display() {
+	cout << endl;
+	cout << "\n=================================" << endl;
+	cout << "Element Array yang telah tersusun" << endl;
+	cout << "==================================" << endl;
+	for (int i = 0; i < n; i++) {
+		cout << arr[i] << " ";
+	}
+
+	cout << "\n\n Angka yang di Bandingkan: " << cmp_count << endl;
+	cout << "Angka dari Data yang Telah di Ubah: " << mov_count << endl;
+}
+
