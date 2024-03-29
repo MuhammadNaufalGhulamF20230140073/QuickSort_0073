@@ -68,3 +68,6 @@ while (i <= j)
 	}
 	
 }
+if (low < j){
+	swap(low, j);
+}
